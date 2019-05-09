@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- <audio controls>
+      <source src="../../Downloads/nerdcast_668_bolao_got.mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FMD_QLPgvVM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr> -->
+    <video controls id="vii">
+      <source src="Ghost in the Shell (1995) 720p BRRiP x264 AAC [Team Nanban].mp4" type="video/mp4">
+        <track kind="subtitles" src="novo.vtt" srclang="pt-br" label="Portugues">
+          </track>
+          <track kind="subtitles" src="sampleSubtitles_en.vtt" srclang="en" label="teste">
+    </video>
+    <script type="text/javascript">
+
+//https://developer.mozilla.org/en-US/docs/Web/API/AudioTrack
+//video = document.getElementsByTagName("video");
+//var video = document.getElementById("vii");
+// var tipo_video = typeof video;
+// alert(video.audioTracks.length);
+document.write("<hr>Vivo!");
+var video = document.getElementById("video");
+var tipo_video = typeof video;
+document.write(tipo_video);
+//document.write(video.audioTracks.length);
+for (var i = 0; i < video.audioTracks.length; i += 1) {
+  video.audioTracks[i].enabled = false;
+  document.write(i);
+}
+
+// for (i=0; i < video.audioTracks.length; i++) {
+//   if (video.audioTracks[i].language.substring(0,2) === "ja") {
+//    video.audioTracks[i].enabled = true;
+//   } else {
+//    video.audioTracks[i].enabled = false;
+//   }
+// }
+
+</script>
+  </body>
+</html>

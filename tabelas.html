@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tabelas</title>
+    <style media="screen">
+      table, th, td {border: 1px solid #000;}
+      th, td {padding: 7px}
+      .nome {background-color:red;}
+      .email {background-color:green;}
+      .Telefone {background-color:blue;}
+      .cargo {background-color:orange;}
+    </style>
+  </head>
+  <body>
+<h1>tabelas</h1>
+<table>
+  <caption>clientes</caption>
+  <colgroup>
+    <col class="nome">
+    <col class="email">
+    <col class="Telefone">
+    <col class="cargo">
+  </colgroup>
+  <thead>
+  <tr>
+    <th>Nome:</th><th>Email:</th><th>Telefone:</th><th>Cargo:</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Rodrigp</td><td>email@servidor.com</td><td>0519986521</td><td rowspan="2">Desenvolver</td>
+  </tr>
+  <tr>
+    <td>Maria</td><td>email@local.com</td><td>0519986521</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="4">Total: 2</td>
+  </tr>
+</tfoot>
+</table>
+  </body>
+</html>
