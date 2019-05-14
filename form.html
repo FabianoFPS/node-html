@@ -8,13 +8,25 @@
     <fieldset>
       <legend>Formulário Bonito</legend>
       <form class="" action="form.html" method="get">
-        Nome:   <br>  <input type="text" name="inp_nome" value="" required autofocus maxlength="7">          <br>
-        Senha:  <br>  <input type="password" name="inp_pass" value="" required placeholder="6 carateres">      <br>
-        <input type="text" name="inp_des" value="texto lindo" disabled><br>
+        Nome:   <br>  <input type="text" name="inp_nome" value="" required autofocus maxlength="7"><br>
+        Senha:  <br>  <input type="password" name="inp_pass" value="" required placeholder="6 carateres"><br>
+        E-mail: <br><input type="email" name="n_email" autocomplete="on" value="" placeholder="Informe seu email"><br>
+        Campo desabilitado: <br> <input type="text" name="inp_des" value="texto lindo" disabled><br>
         Time: <br>
         <input type="radio" name="time" value="vasco">vasco <br>
         <input type="radio" name="time" value="inter" checked>inter <br>
         <input type="checkbox" name="cor" value="vermelho" checked>vermelho <br>
+        Imagem: <br><input type="file" name="n_imagem" value=""><br>
+        <!-- invisivel --><input type="hidden" name="valor_oculto" value="100">
+        URL:<br><input type="url" name="n_url" value=""><br>
+        Search: <br><input type="search" name="N_pesquisa" value=""><br>
+        Telefone: <br><input type="tel" name="tel" value=""><br>
+        DATA: <br><input type="date" name="data" value="" min="2019-05-13" max="2019-06-01"><br>
+        HORA: <br><input type="time" name="time" value=""><br>
+        Mês e ano:<br><input type="month" name="ma" value="">  <br>
+        Semana: <input type="week" name="sm" value=""><br>
+        DateTime: <br><input type="datetime" name="datatime" value=""><br>
+        DateTime (local?): <br>
         <input type="datetime-local" id="meeting-time"
         name="meeting-time" value="2018-06-12T19:30"
         min="2018-06-07T00:00" max="2018-06-14T00:00"><br>
@@ -22,6 +34,20 @@
         <input type="number" name="nunber" min="10" max="40" value="" step="10"><br>
         Segunda quantidade: <input type="range" name="range" value=""><br>
         COR: <input type="color" name="" value=""><br>
+        Mensagem: <br><textarea name="mens" rows="8" cols="50" spellcheck="true" wrap="hard">ONDE ISSO APARECE?</textarea><br>
+
+        <select class="" name="carros">
+          <optgroup label="Carros?">
+            <option value="ca1">Camaro</option>
+            <option value="Alguma">outra coisa</option>
+          </optgroup>
+          <optgroup label="motos">
+            <option value="m1">lambreta</option>
+            <option value="m2" selected>agrale</option>
+          </optgroup>
+        </select>
+        <br>
+        <button type="button" name="button" > <img src="../../Imagens/docker.png" alt="baleia" width="50" > </button>
         <input type="submit" name="Enviar" value="Enviar">
       </form>
     </fieldset>
