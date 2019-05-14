@@ -47,9 +47,28 @@
           </optgroup>
         </select>
         <br>
+        <input list="list-cursos" name="cursos" >
+            <datalist id="list-cursos">
+                <option value="HTML5">Oque?</option>
+                <option value="JS">Surpresa2!</option>
+                <option value="PHP">
+                <option value="CSS">
+            </datalist>
+        <br>
         <button type="button" name="button" > <img src="../../Imagens/docker.png" alt="baleia" width="50" > </button>
         <input type="submit" name="Enviar" value="Enviar">
       </form>
+      <hr>
+      <form id="form_cadastro" class="" method="post" name="formalario_cadastro" enctype="application/x-www-form-urlencoded">
+        Email: <br>
+        <input type="email" name="email" required value="">
+        <input type="submit" name="Cadastrar" value="Cadastrar" formmethod="post" formaction="cadatrar.php" formenctype="application/x-www-form-urlencoded">
+        <input formtarget="_blank" type="submit" name="enviar_por email" value="Enviar por email" formmethod="get" formaction="email.php" formenctype="application/x-www-form-urlencoded" formnovalidate>
+      </form>
+
+      Nome:<br>
+      <input type="text" name="nome" value="" form="form_cadastro">
+
     </fieldset>
 
   </body>
