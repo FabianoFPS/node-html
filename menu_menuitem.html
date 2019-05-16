@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Menu / Menuitem</title>
+        <style media="screen">
+            .elemento{width:300px; height:300px; background-color: #ccc;}
+        </style>
+    </head>
+    <body>
+        <div class="elemento" contextmenu="meu_menu">
+
+        </div>
+        <menu type="context" id="meu_menu">
+            <menuitem type="checkbox" label="Selecionar" checked>Checkbox</menuitem>
+            <menuitem>Atualizar</menuitem>
+            <menu label="Siga-nos">
+                <menuitem icon="img/face.png">Facebook</menuitem>
+                <hr>
+                <menuitem>Google</menuitem>
+                <hr>
+                <menuitem type="command" label="Save">
+            </menu>
+        </menu>
+
+
+        <div contextmenu="popup-menu">
+          Right-click to see the adjusted context menu
+        </div>
+
+        <menu type="context" id="popup-menu">
+          <menuitem type="checkbox" checked>Checkbox</menuitem>
+          <hr>
+          <menuitem type="command" label="This command does nothing" icon="https://developer.cdn.mozilla.net/static/img/favicon144.png">
+            Commands don't render their contents.
+          </menuitem>
+          <menuitem type="command" label="This command has javascript" onclick="alert('command clicked')">
+            Commands don't render their contents.
+          </menuitem>
+          <hr>
+          <menuitem type="radio" radiogroup="group1">Radio Button 1</menuitem>
+          <menuitem type="radio" radiogroup="group1">Radio Button 2</menuitem>
+        </menu>
+    </body>
+</html>
